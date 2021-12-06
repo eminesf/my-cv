@@ -32,11 +32,6 @@ export function Footer() {
             <AiOutlineMail className={styles.icons} />
           </a>
         </li>
-        <li>
-          <a href="https://api.whatsapp.com/send?phone=5551995582616">
-            <AiOutlineWhatsApp className={styles.icons} />
-          </a>
-        </li>
       </ul>
     </div>
   );
