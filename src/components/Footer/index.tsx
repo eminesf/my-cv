@@ -5,7 +5,6 @@ import {
   AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineMail,
-  AiOutlineWhatsApp,
 } from "react-icons/ai";
 
 export function Footer() {
