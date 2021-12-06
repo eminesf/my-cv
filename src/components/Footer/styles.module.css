@@ -1,0 +1,15 @@
+.footer {
+  @apply w-full bg-rich-black text-off-white flex items-center justify-center;
+
+  height: 8rem;
+}
+
+.icons {
+  @apply h-12 w-12;
+
+  transition: transform 100ms ease-in-out;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+}
