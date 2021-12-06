@@ -6,18 +6,18 @@ export function Header() {
       <div
         className={`flex items-center px-5 text-5xl font-serif ${styles.lines}`}
       >
-        <a href="/src/App.tsx">E</a>
+        <a href="/">E</a>
       </div>
       <div className="flex items-center">
         <ul className="flex space-x-5 md:space-x-8 items-center p-5">
           <li className={styles.lines}>
-            <a href="www.google.com.br">Home</a>
+            <a href="https://google.com.br">Home</a>
           </li>
           <li className={styles.lines}>
-            <a href="#">About me</a>
+            <a href="https://google.com.br">About me</a>
           </li>
           <li className={styles.lines}>
-            <a href="#">Contact</a>
+            <a href="https://google.com.br">Contact</a>
           </li>
         </ul>
       </div>
