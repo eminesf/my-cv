@@ -1,0 +1,42 @@
+.body {
+ @apply flex;
+
+ height: 100vh;
+ margin-top: 96px;
+}
+
+.sideA {
+  @apply w-full;
+}
+.bgImage {
+ position: relative;
+ height: 100%;
+ width: 100%;
+}
+
+.sideB {
+  @apply bg-yellow-200 w-full bg-off-white flex justify-center items-center flex flex-col;
+}
+
+.perfilContainer {
+  @apply rounded-full;
+
+  border: 0.5px solid #F8F1FF;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 1100ms ease-in-out;
+}
+
+.perfilContainer:hover{
+  transform: rotate3d(0, 1, 0, 360deg);
+  cursor: pointer;  
+}
+
+.pic {
+  @apply mb-10;
+
+  max-width: 100%;
+  
+}

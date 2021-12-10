@@ -1,14 +1,12 @@
+import { Body } from "./components/Body";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { TypewriterEffect } from "./components/TypewriterEffect";
 
 function App() {
   return (
-    <div className="dark">
+    <div>
       <Header />
-      <div className="bg-off-white h-screen flex justify-center items-center">
-        <TypewriterEffect />
-      </div>
+      <Body />
       <Footer />
     </div>
   );

@@ -13,6 +13,7 @@ module.exports = {
     textColor: theme => ({
       ...theme('colors'),
       'off-white': '#D7D9CE',
+      'teal-blue': '#0C7489',
     }),
     extend: {},
   },
