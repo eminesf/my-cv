@@ -7,18 +7,22 @@ export function Body() {
   return (
     <div className={styles.body}>
       <div className={styles.sideA}>
-        <a href="/">
-          <img
-            src={bgImg}
-            alt="background com código de computador"
-            className={styles.bgImage}
-          />
-        </a>
+        <img
+          src={bgImg}
+          alt="background com código de computador"
+          className={styles.bgImage}
+        />
       </div>
       <div className={styles.sideB}>
-        <div className={styles.perfilContainer}>
-          <img src={perfilImg} alt="Foto de Emiliano" className={styles.pic} />
-        </div>
+        <a href="/">
+          <div className={styles.perfilContainer}>
+            <img
+              src={perfilImg}
+              alt="Foto de Emiliano"
+              className={styles.pic}
+            />
+          </div>
+        </a>
         <TypewriterEffect />
       </div>
     </div>

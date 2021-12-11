@@ -1,5 +1,5 @@
 .body {
- @apply flex;
+ @apply flex flex-col md:flex-row;
 
  height: 100vh;
  margin-top: 96px;
@@ -26,12 +26,11 @@
   width: 200px;
   overflow: hidden;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 1100ms ease-in-out;
+  transition: transform 650ms ease-in-out;
 }
 
 .perfilContainer:hover{
-  transform: rotate3d(0, 1, 0, 360deg);
-  cursor: pointer;  
+  transform: rotate3d(0, 1, 0, 180deg);
 }
 
 .pic {

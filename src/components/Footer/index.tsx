@@ -8,30 +8,27 @@ import {
 } from "react-icons/ai";
 
 export function Footer() {
+  const linkedin =
+    "https://www.linkedin.com/in/emiliano-da-silveira-fucks-64b8a1a5/";
+  const github = "https://github.com/eminesf";
+  const instagram = "https://www.instagram.com/emilianofuchs/";
+
   return (
     <div className={styles.footer}>
-      <ul className="flex space-x-3">
+      <ul className={styles.icons}>
         <li>
-          <a
-            href="https://www.linkedin.com/in/emiliano-da-silveira-fucks-64b8a1a5/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <AiOutlineLinkedin className={styles.icons} />
+          <a href={linkedin} target="_blank" rel="noreferrer">
+            <AiOutlineLinkedin className={styles.icon} />
           </a>
         </li>
         <li>
-          <a href="https://github.com/eminesf" target="_blank" rel="noreferrer">
-            <AiOutlineGithub className={styles.icons} />
+          <a href={github} target="_blank" rel="noreferrer">
+            <AiOutlineGithub className={styles.icon} />
           </a>
         </li>
         <li>
-          <a
-            href="https://www.instagram.com/emilianofuchs/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <AiOutlineInstagram className={styles.icons} />
+          <a href={instagram} target="_blank" rel="noreferrer">
+            <AiOutlineInstagram className={styles.icon} />
           </a>
         </li>
         <li>
@@ -40,10 +37,19 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <AiOutlineMail className={styles.icons} />
+            <AiOutlineMail className={styles.icon} />
           </a>
         </li>
       </ul>
+      <div className={styles.rights}>
+        <span className="text-lg">
+          Site criado por{" "}
+          <a href={linkedin} target="_blank" rel="noreferrer">
+            Emiliano Fucks
+          </a>
+          . Todos direitos reservados. &#174;
+        </span>
+      </div>
     </div>
   );
 }

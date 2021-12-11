@@ -1,15 +1,23 @@
 .footer {
-  @apply w-full bg-rich-black text-off-white flex items-center justify-center;
+  @apply w-full bg-rich-black text-off-white flex flex-col items-center justify-between;
 
-  height: 8rem;
+  height: 13rem;
 }
 
 .icons {
+  @apply space-x-3 mt-6 flex;
+}
+
+.icon {
   @apply h-12 w-12;
 
   transition: transform 100ms ease-in-out;
 }
 
-.icons:hover {
+.icon:hover {
   transform: scale(1.2);
+}
+
+.rights {
+  margin-bottom: 5px;
 }
