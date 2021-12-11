@@ -1,6 +1,8 @@
 .footer {
   @apply w-full bg-rich-black text-off-white flex flex-col items-center justify-between;
 
+  
+
   height: 17vh;
 }
 

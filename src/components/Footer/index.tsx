@@ -42,7 +42,7 @@ export function Footer() {
         </li>
       </ul>
       <div className={styles.rights}>
-        <span className="text-lg">
+        <span className="text-xs md:text-lg">
           Site criado por{" "}
           <a href={linkedin} target="_blank" rel="noreferrer">
             Emiliano Fucks

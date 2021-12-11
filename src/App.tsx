@@ -4,7 +4,7 @@ import { Header } from "./components/Header";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col">
       <Header />
       <Body />
       <Footer />
