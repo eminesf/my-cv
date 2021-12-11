@@ -7,13 +7,6 @@ export function Body() {
   return (
     <div className={styles.body}>
       <div className={styles.sideA}>
-        <img
-          src={bgImg}
-          alt="background com código de computador"
-          className={styles.bgImage}
-        />
-      </div>
-      <div className={styles.sideB}>
         <a href="/">
           <div className={styles.perfilContainer}>
             <img
@@ -24,6 +17,16 @@ export function Body() {
           </div>
         </a>
         <TypewriterEffect />
+      </div>
+      <div className={styles.sideB}>
+        <a href="/" className={styles.btn}>
+          Botão
+        </a>
+        <img
+          src={bgImg}
+          alt="background com código de computador"
+          className={styles.bgImage}
+        />
       </div>
     </div>
   );

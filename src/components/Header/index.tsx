@@ -1,3 +1,4 @@
+import { MenuHamburguer } from "../MenuHamburguer";
 import styles from "./styles.module.css";
 
 export function Header() {
@@ -6,7 +7,10 @@ export function Header() {
       <div className={styles.logo}>
         <a href="/">E</a>
       </div>
-      <div className="flex items-center">
+      <div className={styles.hamburguerMenu}>
+        <MenuHamburguer />
+      </div>
+      <div className="hidden md:flex items-center">
         <ul className="flex space-x-5 md:space-x-8 items-center p-5">
           <li className={`bg-off-white text-rich-black ${styles.lines}`}>
             <a href="/">Home</a>

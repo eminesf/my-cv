@@ -1,16 +1,16 @@
 .header {
-  @apply p-2 text-off-white bg-rich-black flex fixed w-full justify-between text-lg shadow-2xl;
-
-  height: 8vh;
+  @apply p-2 text-off-white bg-rich-black flex fixed w-full justify-between text-lg shadow-2xl items-center;
+  
+  height: 10vh;
   top: 0;
   left: 0;
   z-index: 9999;
+
 }
 
 .lines {
   @apply py-2 px-2 rounded-md flex justify-center items-center;
   transition: transform 100ms ease-in-out;
-  box-shadow: 1px 1px 4px 1px rgba(50,50,50, 0.5);
 }
 
 .lines:hover {
@@ -29,4 +29,13 @@
 
 .logo:hover {
   transform: scale(1.2);
+}
+
+.hamburguerMenu {
+  @apply px-5;
+  transition: transform 100ms ease-in-out;
+}
+
+.hamburguerMenu:hover {
+  transform: scale(1.1);
 }

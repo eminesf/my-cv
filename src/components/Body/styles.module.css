@@ -1,21 +1,20 @@
 .body {
  @apply flex flex-col md:flex-row;
 
- height: 75vh;
- margin-top: 8vh; 
+ height: 90vh;
+ margin-top: 10vh; 
+}
+
+.bgImage {
+  @apply h-full w-full;
 }
 
 .sideA {
-  @apply w-full;
-}
-.bgImage {
- position: relative;
- height: 100%;
- width: 100%;
+  @apply bg-yellow-200 w-full bg-off-white flex justify-center items-center flex flex-col py-10;
 }
 
 .sideB {
-  @apply bg-yellow-200 w-full bg-off-white flex justify-center items-center flex flex-col;
+  @apply w-full flex justify-center items-center;
 }
 
 .perfilContainer {
@@ -38,4 +37,17 @@
 
   max-width: 100%;
   
+}
+
+.btn {
+  @apply h-12 px-16 rounded-md flex justify-center items-center;
+
+  position: absolute;
+  background: #febe01;
+  color: #332200;
+  transition: transform 100ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
