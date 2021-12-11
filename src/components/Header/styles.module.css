@@ -1,7 +1,7 @@
 .header {
   @apply p-2 text-off-white bg-rich-black flex fixed w-full justify-between text-lg shadow-2xl;
 
-  height: 6rem;
+  height: 8vh;
   top: 0;
   left: 0;
   z-index: 9999;
