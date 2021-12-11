@@ -8,17 +8,23 @@ export function Header() {
       </div>
       <div className="flex items-center">
         <ul className="flex space-x-5 md:space-x-8 items-center p-5">
-          <li className={styles.lines}>
+          <li className={`bg-off-white text-rich-black ${styles.lines}`}>
             <a href="/">Home</a>
           </li>
           <li className={styles.lines}>
-            <a href="https://google.com.br">About me</a>
+            <a href="https://google.com.br" className={styles.button}>
+              About me
+            </a>
           </li>
           <li className={styles.lines}>
-            <a href="https://google.com.br">Contact</a>
+            <a href="https://google.com.br" className={styles.button}>
+              Contact
+            </a>
           </li>
           <li className={styles.lines}>
-            <a href="https://google.com.br">Blog</a>
+            <a href="https://google.com.br" className={styles.button}>
+              Blog
+            </a>
           </li>
         </ul>
       </div>

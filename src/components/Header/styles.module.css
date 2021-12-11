@@ -8,11 +8,18 @@
 }
 
 .lines {
+  @apply py-2 px-2 rounded-md flex justify-center items-center;
   transition: transform 100ms ease-in-out;
+  box-shadow: 1px 1px 4px 1px rgba(50,50,50, 0.5);
 }
 
 .lines:hover {
+  @apply bg-off-white text-rich-black;
   transform: scale(1.1);
+}
+
+.button{
+
 }
 
 .logo {

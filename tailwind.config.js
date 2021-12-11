@@ -14,6 +14,7 @@ module.exports = {
       ...theme('colors'),
       'off-white': '#D7D9CE',
       'teal-blue': '#0C7489',
+      'rich-black': '#040404',
     }),
     extend: {},
   },
