@@ -43,11 +43,11 @@ export function Footer() {
       </ul>
       <div className={styles.rights}>
         <span className="text-xs md:text-lg">
-          Site criado por{" "}
+          Created by{" "}
           <a href={linkedin} target="_blank" rel="noreferrer">
-            Emiliano Fucks
+            Emiliano S Fucks
           </a>
-          . Todos direitos reservados. &#174;
+          . All rights reserved. &#174;
         </span>
       </div>
     </div>

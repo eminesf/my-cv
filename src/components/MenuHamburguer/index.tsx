@@ -1,23 +1,20 @@
-import { useState } from "react";
 import "./styles.css";
 
-export function MenuHamburguer() {
-  const [active, setActive] = useState(false);
+interface MenuHamburguerProps {
+  onClickDropdownMenu: () => void;
+  isActive: boolean;
+}
 
-  function handleToggleActive() {
-    if (active === false) {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
-  }
-
+export function MenuHamburguer({
+  onClickDropdownMenu,
+  isActive,
+}: MenuHamburguerProps) {
   return (
     <div
       className={`toggle bg-rich-black border-2 flex md:hidden ${
-        active ? "active" : ""
+        isActive ? "active" : ""
       }`}
-      onClick={handleToggleActive}
+      onClick={onClickDropdownMenu}
     >
       <span></span>
       <span></span>

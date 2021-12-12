@@ -5,6 +5,10 @@
  margin-top: 10vh; 
 }
 
+.dropDownMenu {
+ @apply flex justify-end md:hidden; 
+}
+
 .sideA {
   @apply w-full flex flex-col flex-1 bg-off-white justify-center items-center py-10;
 }
@@ -24,9 +28,7 @@
   transition: transform 650ms ease-in-out;
 }
 
-.perfilContainer:hover{
-  transform: rotate3d(0, 1, 0, 180deg);
-}
+
 
 .pic {
   @apply mb-10;

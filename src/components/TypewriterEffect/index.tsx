@@ -3,14 +3,14 @@ import Typewriter from "typewriter-effect";
 export function TypewriterEffect() {
   return (
     <div className="text-xl mt-6 text-center">
-      <p>Olá, me chamo Emiliano</p>
+      <p>Hi, i'm Emiliano</p>
       <Typewriter
         onInit={(typewriter) => {
           typewriter
-            .typeString("sou desenvolvedor <strong>Frontend</strong>")
-            .pauseFor(3000)
+            .typeString("and i'm <strong>Frontend software engineer</strong>")
+            .pauseFor(4000)
             .deleteAll()
-            .typeString("Fique a vontade :)")
+            .typeString("Be welcome :)")
             .pauseFor(300)
             .start();
         }}

@@ -1,0 +1,31 @@
+.dropdown {
+  position: relative;
+  width: 300px;
+}
+
+.dropdown .options {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 100%;
+  background: #040404;
+  color: #F8F1FF;
+  box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.dropdown.active .options {
+  display: block;
+}
+
+.dropdown .options div {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.dropdown .options div:hover {
+  background: #febe01;
+  color: #040404;
+} 

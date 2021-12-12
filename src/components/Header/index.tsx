@@ -1,14 +1,22 @@
 import { MenuHamburguer } from "../MenuHamburguer";
 import styles from "./styles.module.css";
 
-export function Header() {
+interface MenuHamburguerProps {
+  onClickDropdownMenu: () => void;
+  isActive: boolean;
+}
+
+export function Header({ onClickDropdownMenu, isActive }: MenuHamburguerProps) {
   return (
     <div className={styles.header}>
       <div className={styles.logo}>
         <a href="/">E</a>
       </div>
-      <div className={styles.hamburguerMenu}>
-        <MenuHamburguer />
+      <div className={`md:hidden ${styles.hamburguerMenu}`}>
+        <MenuHamburguer
+          onClickDropdownMenu={onClickDropdownMenu}
+          isActive={isActive}
+        />
       </div>
       <div className="hidden md:flex items-center">
         <ul className="flex space-x-5 md:space-x-8 items-center p-5">
