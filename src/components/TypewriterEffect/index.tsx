@@ -7,8 +7,9 @@ export function TypewriterEffect() {
       <Typewriter
         onInit={(typewriter) => {
           typewriter
-            .typeString("sou desenvolvedor <strong>Frontend</strong></br>")
+            .typeString("sou desenvolvedor <strong>Frontend</strong>")
             .pauseFor(3000)
+            .deleteAll()
             .typeString("Fique a vontade :)")
             .pauseFor(300)
             .start();

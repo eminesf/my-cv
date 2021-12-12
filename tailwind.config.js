@@ -16,7 +16,11 @@ module.exports = {
       'teal-blue': '#0C7489',
       'rich-black': '#040404',
     }),
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'sideB': "url('/src/assets/bg-2000.jpg')"
+      }
+    },
   },
   variants: {
     extend: {},

@@ -5,16 +5,12 @@
  margin-top: 10vh; 
 }
 
-.bgImage {
-  @apply h-full w-full;
-}
-
 .sideA {
-  @apply bg-yellow-200 w-full bg-off-white flex justify-center items-center flex flex-col py-10;
+  @apply w-full flex flex-col flex-1 bg-off-white justify-center items-center py-10;
 }
 
 .sideB {
-  @apply w-full flex justify-center items-center;
+  @apply w-full flex flex-1 justify-center items-center bg-sideB bg-cover;
 }
 
 .perfilContainer {
@@ -42,7 +38,7 @@
 .btn {
   @apply h-12 px-16 rounded-md flex justify-center items-center;
 
-  position: absolute;
+  
   background: #febe01;
   color: #332200;
   transition: transform 100ms ease-in-out;
