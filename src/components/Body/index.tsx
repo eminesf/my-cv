@@ -1,7 +1,6 @@
 import { TypewriterEffect } from "../TypewriterEffect";
 import styles from "./styles.module.css";
 import perfilImg from "../../assets/perfil-1200.jpg";
-import bgImg from "../../assets/bg-2000.jpg";
 
 export function Body() {
   return (
