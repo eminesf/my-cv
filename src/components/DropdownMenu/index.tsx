@@ -1,14 +1,9 @@
+import { useMenu } from "../../Hooks/useMenu";
 import "./styles.css";
 
-interface MenuHamburguerProps {
-  onClickDropdownMenu: () => void;
-  isActive: boolean;
-}
+export function DropdownMenu() {
+  const { active, handleToggleActive } = useMenu();
 
-export function DropdownMenu({
-  onClickDropdownMenu,
-  isActive,
-}: MenuHamburguerProps) {
   const headerMenu = [
     {
       id: 1,
@@ -33,16 +28,15 @@ export function DropdownMenu({
   ];
 
   return (
-    <div className={`dropdown ${isActive ? "active" : ""}`}>
+    <div className={`dropdown ${active ? "active" : ""}`}>
       <div className="options">
         {headerMenu.map((option) => (
-          <a href={option.link} onClick={onClickDropdownMenu} key={option.id}>
+          <a href={option.link} onClick={handleToggleActive} key={option.id}>
             <div>
               <span>{option.name}</span>
             </div>
           </a>
         ))}
-        {console.log(isActive)}
       </div>
     </div>
   );

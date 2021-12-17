@@ -3,19 +3,11 @@ import styles from "./styles.module.css";
 import perfilImg from "../../assets/perfil-1200.jpg";
 import { DropdownMenu } from "../DropdownMenu";
 
-interface MenuHamburguerProps {
-  onClickDropdownMenu: () => void;
-  isActive: boolean;
-}
-
-export function Body({ onClickDropdownMenu, isActive }: MenuHamburguerProps) {
+export function Body() {
   return (
     <div className={styles.body}>
       <div className={styles.dropDownMenu}>
-        <DropdownMenu
-          onClickDropdownMenu={onClickDropdownMenu}
-          isActive={isActive}
-        />
+        <DropdownMenu />
       </div>
       <div className={styles.sideA}>
         <a href="/">
